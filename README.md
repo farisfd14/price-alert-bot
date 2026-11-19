@@ -44,3 +44,8 @@ Windows Task Scheduler, daily trigger, action:
   Telegram (blocked without it in China)
 - state file so an alert bot only speaks on changes
 - secrets in .env, never in code, never on GitHub
+
+## .env example
+
+- TELEGRAM_TOKEN=paste-your-token-here
+- TELEGRAM_CHAT_ID=paste-your-chat-id-here
