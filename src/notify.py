@@ -22,7 +22,6 @@ TELEGRAM_URL = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
 def send_message(text: str):
     """Send `text` to my Telegram. Returns True if Telegram accepted it."""
     session = requests.Session()
-    session.trust_env = False   # our trusted proxy bypass again
     resp = session.post(TELEGRAM_URL, data={
         "chat_id": CHAT_ID,
         "text": text,
